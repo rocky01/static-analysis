@@ -1,9 +1,11 @@
 language: bash
-
 sudo: required
-
 services:
 - docker
 
 script:
-- echo "hello world"
+- mkdir bin
+- cd bin
+- cmake ..
+- make
+- make test
