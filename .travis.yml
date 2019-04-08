@@ -4,6 +4,7 @@ services:
 - docker
 
 script:
+- cat /proc/cpuinfo
 - mkdir bin
 - cd bin
 - cmake ..
